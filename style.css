@@ -1,0 +1,148 @@
+.container-fluid {
+  padding-right: calc(var(--bs-gutter-x) * 5);
+  padding-left: calc(var(--bs-gutter-x) * 5);
+}
+
+.navbar-brand {
+  font-weight: 600;
+}
+html {
+  scroll-behavior: smooth;
+}
+.carousel {
+  scroll-behavior: smooth;
+}
+h5 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.1rem;
+}
+#section-2 {
+  margin-top: 6rem;
+}
+#section-2 > .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+#section-2 > .container-fluid img {
+  width: 300px;
+  height: 200px;
+  border-radius: 0.5rem;
+}
+#photo-gallery {
+  margin-top: 6rem;
+}
+#photo-gallery > .container-fluid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  gap: 1rem;
+  width: 100%;
+}
+#photo-gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+.img-1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+.img-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.img-3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.img-4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.img-5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.img-6 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.img-7 {
+  grid-column: 4;
+  grid-row: 2;
+}
+.img-8 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.img-9 {
+  grid-column: 2 / span 3;
+  grid-row: 3;
+}
+.flex-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-top: 6rem;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.cta:hover {
+  background-color: snow;
+  color: black;
+  border-style: dashed;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-weight: 500;
+}
+.mt-10 {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+}
+.mt-11 {
+  margin-top: 0rem;
+}
+.fw-hightlight {
+  font-weight: 800;
+}
+.mb-20 {
+  margin-top: 1rem;
+}
+h6 {
+  font-size: 1.2rem;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+@media screen and (max-width: 1000px) {
+  .container-fluid {
+    padding-right: calc(var(--bs-gutter-x) * 3);
+    padding-left: calc(var(--bs-gutter-x) * 3);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-fluid {
+    padding-right: calc(var(--bs-gutter-x) * 1.5);
+    padding-left: calc(var(--bs-gutter-x) * 1.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .card {
+    width: 90% !important;
+  }
+}
